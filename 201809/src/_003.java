@@ -119,7 +119,7 @@ public class _003 {
     public static String tolwr(String s){
         return s.toLowerCase();
     }
-    public static boolean search(List<node> a,int startIndex, int myLevel, String s) {
+    public static boolean search(List<node> a, int startIndex, int myLevel, String s) {
         int matchedLevel = -2;
         for (int i = 0; i < startIndex; i++) {
             if (a.get(i).level == myLevel - 1 && a.get(i).name.equals(s)) {

@@ -12,10 +12,8 @@ import java.util.Scanner;
 public class _002 {
     public static void main(String args[]){
         Scanner input=new Scanner(System.in);
-        String inputNK=input.nextLine();
-        String[] inputNKStr=inputNK.split("\\s");
-        int n=Integer.parseInt(inputNKStr[0]);
-        int k=Integer.parseInt(inputNKStr[1]);
+        int n=input.nextInt();
+        int k=input.nextInt();
         List<Kid> kidList=new ArrayList<>();
         for(int i=1; i<=n; i++){
             kidList.add(new Kid(i));

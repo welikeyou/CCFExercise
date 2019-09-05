@@ -54,11 +54,12 @@ public class _002 {
                 if(box[i][j]+block[botton][y]==2){
                     down = i-1;
                     break;
-                }else if(i==14){
-                    down = i;
                 }
-
                 y++;
+            }
+            if(i==14&&down==0){
+                down = i;
+                break;
             }
             if(down!=0){
                 break;
@@ -66,7 +67,7 @@ public class _002 {
         }
 
         int x=botton;
-        for(int i=down; i>down-botton; i--){//i对应行
+        for(int i=down; i>=down-botton; i--){//i对应行
             int y=left;
             for(int j=index; j<index+4-left;j++){
                 box[i][j]=box[i][j]+block[x][y];
