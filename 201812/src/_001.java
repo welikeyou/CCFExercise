@@ -15,7 +15,6 @@ public class _001 {
         short g = input.nextShort();
         short n = input.nextShort();
         int totalTime=0;
-        short[][] roat=new short[n][2];
         for(int i=0; i<n; i++){
             int type=input.nextShort();
             int time=input.nextShort();
@@ -23,12 +22,10 @@ public class _001 {
                 totalTime+=time;
             }
             else if(type==2){//yellow
-                totalTime=totalTime+r+time;
+                totalTime += r+time;
             }
         }
         System.out.print(totalTime);
-
-
     }
 }
 
